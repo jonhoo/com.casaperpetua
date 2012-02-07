@@ -2,6 +2,6 @@ $(function() {
   $('.photo').fancybox({
     openEffect: 'elastic',
     closeEffect: 'elastic',
-    helpers : { title : { type : 'inside' } }
+    helpers : { title : { type : 'over' } }
   });
 });
