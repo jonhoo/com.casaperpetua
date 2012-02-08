@@ -217,15 +217,12 @@ td { vertical-align: top; }
 /* ==|== primary styles =====================================================
    Author: Jon Gjengset <jon@thesquareplanet.com>
    ========================================================================== */
-.limited { width: 960px; margin: 0 auto; }
 html { background: #B0A798; }
 body { padding-top: 1em; }
 h1, h2, h3 { font-family: 'Muli', sans-serif; color: white; font-weight: normal; }
 header {
   position: relative;
-  display: block;
-  background: url(../gfx/promo.jpg) top left no-repeat;
-  height: 637px;
+  display: none;
 }
   header hgroup {
     position: absolute;
@@ -238,17 +235,15 @@ header {
 .shadow { border: 1px solid #C0B7A9; box-shadow: 3px 3px 5px #555; }
 .box { background: #E2E6DF; color: #222; }
 .padded { padding: 15px 30px; }
-  .limited.padded { width: 900px; }
-  .limited.shadow { width: 958px; }
-  .limited.padded.shadow { width: 898px; }
 .offset { margin-top: 2em; margin-bottom: 0; }
   .offset + .offset.padded, .offset + .offset.gallery { margin-top: 0; }
   .offset.gallery + .offset.padded { margin-top: 2em; }
-.img-right p { margin-right: 490px; }
-.img-right .img { float: right; margin: .5em 0; clear: right; }
-.content h2 { margin: .3em 0 0 0; color: #D7441A; font-size: 3em; }
-p { margin: .5em 0; font-family: 'PT Serif', serif; }
+.content h2 { margin: .3em 0 0 .3em; color: #D7441A; font-size: 3em; }
+p { margin: .5em 0; font-family: 'PT Serif', serif; text-align: left; }
   p strong { font-family: "Muli" sans-serif; }
+.img-right { text-align: center; }
+.img { max-width: 90%; }
+  .img img { max-width: 100%; height: auto; }
 .photo {
   display: inline-block;
   *display: inline;
@@ -279,7 +274,7 @@ footer {
   margin-top: 4em;
   position: relative;
 }
-  footer p { margin: .5em 0; }
+  footer p { margin: .5em 1em; }
   footer a:link { color: #0C6FA9; text-decoration: none; }
   footer a:visited { color: #6C6FA9; }
   footer a:hover { text-decoration: underline; }
@@ -290,6 +285,23 @@ footer {
 .clear { clear: both; padding: 1em 0; }
   .img-right .clear { margin-right: 0; }
 
+@media all and (min-width: 960px) {
+  .limited { width: 960px; margin: 0 auto; }
+    .limited.padded { width: 900px; }
+    .limited.shadow { width: 958px; }
+    .limited.padded.shadow { width: 898px; }
+  header {
+    background: url(../gfx/promo.jpg) top left no-repeat;
+    height: 637px;
+    display: block;
+  }
+}
+@media all and (min-width: 980px) {
+  footer p { margin: .5em 0; }
+  .content h2 { margin-left: 0; }
+  .img-right p { margin-right: 490px; }
+  .img-right .img { float: right; margin: .5em 0; clear: right; }
+}
 
 
 
