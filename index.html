@@ -11,16 +11,15 @@
   <script src="static/js/libs/modernizr-2.5.0.min.js"></script>
   <style>
     .limited { width: 960px; margin: 0 auto; }
-    html { background: #0C6FA9; }
+    html { background: #C0B7A8; }
     body { padding-top: 1em; }
-    h1, h2, h3 { font-family: 'Muli', sans-serif; color: white; text-shadow: 2px 2px 5px #333; font-weight: normal; }
+    h1, h2, h3 { font-family: 'Muli', sans-serif; color: white; font-weight: normal; }
     header {
       position: relative;
       display: block;
       background: url(static/gfx/promo.jpg) top left no-repeat;
       height: 637px;
     }
-      header.shadow { border-color: #555; }
       header hgroup {
         position: absolute;
         bottom: 1em;
@@ -28,19 +27,19 @@
         text-align: right;
         color: white;
       }
-        header h1, header h2 { margin: 0; }
-    .shadow { border: 1px solid #CCC; box-shadow: 3px 3px 5px #333; }
-    .box { background: #EEE; color: #081F00; }
+        header h1, header h2 { margin: 0; text-shadow: 2px 2px 5px #333; }
+    .shadow { border: 1px solid #C0B7A9; box-shadow: 3px 3px 5px #555; }
+    .box { background: #E2E6DF; color: #222; }
     .padded { padding: 15px 30px; }
       .limited.padded { width: 900px; }
       .limited.shadow { width: 958px; }
       .limited.padded.shadow { width: 898px; }
-    .offset { margin-top: 2em; margin-bottom: .1em; }
+    .offset { margin-top: 2em; margin-bottom: 0; }
       .offset + .offset.padded, .offset + .offset.gallery { margin-top: 0; }
       .offset.gallery + .offset.padded { margin-top: 2em; }
-    .img-right p, .img-right h2 { margin-right: 490px; }
+    .img-right p { margin-right: 490px; }
     .img-right .img { float: right; margin: .5em 0; clear: right; }
-    h2 { margin: .3em 0; }
+    .content h2 { margin: .3em 0 0 0; color: #D7441A; font-size: 3em; }
     p { margin: .5em 0; font-family: 'PT Serif', serif; }
       p strong { font-family: "Muli" sans-serif; }
     .photo {
@@ -65,8 +64,7 @@
         .gallery .photo:hover img { opacity: 1; }
     footer {
       display: block;
-      background: black;
-      background: rgba(0, 0, 0, 0.8);
+      background: #332016;
       width: 100%;
       padding: .5em 0;
       font-size: 14px;
@@ -94,7 +92,7 @@
       <h2>La Vila Joiosa, Spania</h2>
     </hgroup>
   </header>
-  <div role="main" class="limited clearfix">
+  <div role="main" class="limited clearfix content">
     <div class="offset">
       <h2>Velkommen til Casa Perpetua!</h2>
       <div class="box padded img-right clearfix shadow">
