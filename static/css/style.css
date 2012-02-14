@@ -1,5 +1,5 @@
 /*
- * HTML5 Boilerplate
+ * HTML5 Boilerplate {{{
  *
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
@@ -213,13 +213,14 @@ td { vertical-align: top; }
 
 .chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
 
+/** }}} **/
 
 /* ==|== primary styles =====================================================
    Author: Jon Gjengset <jon@thesquareplanet.com>
    ========================================================================== */
 html { background: #B0A798; }
 body { padding-top: 1em; }
-h1, h2, h3 { font-family: 'Muli', sans-serif; color: white; font-weight: normal; }
+h1, h2, h3 { font-family: 'Muli', sans-serif; font-weight: normal; }
 header {
   position: relative;
   display: none;
@@ -230,9 +231,10 @@ header {
     right: 2em;
     text-align: right;
     color: white;
+    font-size: 1.4em;
   }
     header h1, header h2 { margin: 0; text-shadow: 2px 2px 5px #333; }
-.shadow { border: 1px solid #C0B7A9; box-shadow: 3px 3px 5px #555; }
+.shadow { border: 1px solid #A09789; }
 .box { background: #E2E6DF; color: #222; }
 .padded { padding: 15px 30px; }
 .offset { margin-top: 2em; margin-bottom: 0; }
@@ -240,8 +242,9 @@ header {
   .offset.gallery + .offset.padded { margin-top: 2em; }
 .content h2 { margin: .3em 0 0 .3em; color: #D7441A; font-size: 3em; }
 p { margin: .5em 0; font-family: 'PT Serif', serif; text-align: left; }
+  td { font-family: 'PT Serif', serif; }
   p strong { font-family: "Muli" sans-serif; }
-.img-right { text-align: center; }
+.img-right { }
 .img { max-width: 90%; }
   .img img { max-width: 100%; height: auto; }
 .photo {
@@ -281,6 +284,9 @@ footer {
   footer h2 a:link, footer h2 a:visited { color: inherit; }
 .center { text-align: center; }
   .center h2 { text-align: left; }
+.centered { margin: 0 auto; }
+.bold { font-weight: bold; }
+  table.bold td, table th { font-family: "Muli" sans-serif; }
 .clear { clear: both; padding: 1em 0; }
   .img-right .clear { margin-right: 0; }
 
@@ -304,6 +310,7 @@ footer {
     .gallery .photo:hover img { opacity: 1; }
 }
 
+/** More boilerplate {{{ **/
 
 
 
@@ -377,3 +384,5 @@ footer {
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; }
 }
+
+/** }}} **/
